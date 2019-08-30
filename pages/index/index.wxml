@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="relative">
+  <image class='pic-background' src="/resources/img/bg.jpg"></image>
+  <view  class="showed-view">
+    <canvas class="canvas-show" style="width:{{canvasWidth}}px;height:{{canvasWidth}}px" canvas-id='myCanvas2' ></canvas>
+  </view>
+    
+  <view class='userinfo'>
+    <view style="z-index:9">
+      <image src="/resources/img/left.png" class="left-right-signal" ></image>
+    </view>
+    <scroll-view scroll-x style="width: auto;white-space:nowrap;z-index:2" scroll-left='{{}}' scroll-right='{{}}'>
+      <view id="bordergrid" class="avatar-border-scroll-view" style="overflow:scroll;">
+          <view class="item-list" wx:for="{{avatar_border_list}}">
+            <image id="{{index}}" bindtap="select" class="{{border_css[index]}}" src="{{item}}" ></image>
+          </view>
+      </view>
+    </scroll-view>
+    <view style="z-index:9">
+      <image src="/resources/img/right.png" class="left-right-signal"></image>
+    </view>
+  </view>
+  <button bindtap='saveImg' class="userinfo-download" disabled="{{btn_download_disabled}}"></button>
+    <image src="/resources/img/save.jpg" class="userinfo-download-icon"></image> 
+    <button  open-type="share"  class="share-button"></button>
+  <image src="/resources/img/share.png" class="share-icon"></image> 
+  <view class="bottom-motto">
+    <text class="motto-text">©2018 浙江大学研究生会</text>
+  </view>
+</view>
+
+
+
+
+  
+
+

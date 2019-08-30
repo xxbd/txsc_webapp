@@ -1,0 +1,103 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.relative{
+  height: 100%;
+  width:100%;
+  position: relative;
+}
+ 
+.pic-background{
+  height: 100%;
+  width:100%;
+  position:absolute;
+  z-index: 1;
+}
+.showed-view{padding-top:160rpx;display: flex;justify-content: center; z-index: 2}
+.canvas-show{border:solid 1rpx rgb(216, 214, 214);z-index: 2}
+
+.userinfo {display: flex;display: -webkit-flex;  flex-direction:row;margin-top: 20rpx;margin-bottom: 20rpx;white-space: nowrap;justify-content: center;-webkit-justify-content: center}
+.left-right-signal{width: 60rpx; height: 60rpx; padding-top: 34rpx; padding-bottom: 34rpx}
+
+.avatar-border-scroll-view{display: flex;height: 100%;flex-direction:row; width: 300px}
+
+
+.avatar-border-view{display: flex;flex-direction: row;flex-wrap:wrap;justify-content: center;margin-top: 20rpx;margin-left: 50rpx;margin-right: 50rpx;margin-bottom: 20rpx;}
+.avatar-border{border: solid 3rpx transparent;width: 128rpx;height: 128rpx}
+.avatar-border-selected {border: solid 3rpx rgb(79, 250, 11);width: 128rpx;height: 128rpx}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.item-list{width: 100%;height: 100%;z-index: 1;margin-right: 20rpx}
+
+
+
+
+.userinfo-download-hover{background-color: rgb(194, 49, 49);color: #FFF;}
+.userinfo-share{width: 40%;background-color: rgb(255, 102, 0);color: #FFF;border: solid 1px rgb(255, 102, 0);font-weight: 600}
+.userinfo-share::after{border: 0;}
+.userinfo-share-hover {background-color:  #FFF;color:rgb(255, 102, 0)}
+.userinfo-avatar {border: solid 1px rgb(138, 57, 57); width: 128rpx;height: 128rpx;margin: 20rpx;border-radius: 50%;}
+
+.share-button{
+  background: transparent;
+  opacity: 0;
+  top: 930rpx;
+  left: 0rpx;
+  height: 120rpx;
+  width: 120rpx;
+  position:absolute;
+  z-index: 2;
+}
+
+::after{border: none;}
+
+.share-icon{
+  position:absolute;  
+  top: 930rpx;
+  left: 0rpx;
+  height: 120rpx;
+  width:120rpx;
+  display: inline-block;
+  z-index: 1;
+}
+
+.userinfo-download{background: transparent;
+  opacity: 0;
+  top: 940rpx;
+  left: 238rpx;
+  height: 91rpx;
+  width:274rpx;
+  position:absolute;
+  z-index: 2;}
+.userinfo-download::after{border: none;}
+.userinfo-download-icon{position:absolute;  
+  top: 940rpx;
+  left: 238rpx;
+  height: 91rpx;
+  width:274rpx;
+  display: inline-block;
+  z-index: 1;}
+
+  .bottom-motto{
+    position:absolute;
+    text-align: center;
+    left: 0; right: 0;
+    z-index:9;
+    display:flex; display: -webkit-flex;  
+    flex-direction:row;
+    bottom: 20rpx;
+    white-space: nowrap;
+    justify-content: center;
+    -webkit-justify-content: center
+  }
+
+  .motto-text{
+    color: whitesmoke;
+    font-size:small;
+    opacity:0.8;
+  }

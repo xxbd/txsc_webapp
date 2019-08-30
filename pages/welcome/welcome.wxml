@@ -1,0 +1,12 @@
+ <!--welcome.wxml-->
+<view class="relative">
+  <image class='pic-background' src="/resources/img/bg.jpg"></image>
+  <image class='pic-foreground' src="/resources/img/title.png"></image>
+  <button  open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="open-button"></button>
+  <image src="/resources/img/start.jpg" class="button-icon"></image> 
+
+  <view class="bottom-motto">
+    <text class="motto-text"> ©2018 浙江大学研究生会</text>
+  </view>
+
+</view>

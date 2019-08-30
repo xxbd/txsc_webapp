@@ -1,0 +1,67 @@
+/**welcome.wxss**/
+page{
+  height: 100%;
+}
+.relative{
+  height: 100%;
+  width:100%;
+  position:relative;
+}
+ 
+.pic-background{
+  height: 100%;
+  width:100%;
+  position:absolute;
+  z-index: 1;
+}
+.pic-foreground{
+  top:250rpx;
+  left: 90rpx;
+  height: 519rpx;
+  width:624rpx;
+  position:absolute;
+  z-index: 1;
+}
+.open-button{
+  background: transparent;
+  opacity: 0;
+  top: 850rpx;
+  left: 238rpx;
+  height: 91rpx;
+  width:274rpx;
+  position:absolute;
+  z-index: 2;
+}
+
+::after{
+  border: none;
+}
+
+.button-icon{
+  position:absolute;  
+  top: 850rpx;
+  left: 238rpx;
+  height: 91rpx;
+  width:274rpx;
+  display: inline-block;
+  z-index: 1;
+}
+
+  .bottom-motto{
+    position:absolute;
+    text-align: center;
+    left: 0; right: 0;
+    z-index:9;
+    display:flex; display: -webkit-flex;  
+    flex-direction:row;
+    bottom: 20rpx;
+    white-space: nowrap;
+    justify-content: center;
+    -webkit-justify-content: center
+  }
+
+  .motto-text{
+    color: whitesmoke;
+    font-size:small;
+    opacity:0.8;
+  }
